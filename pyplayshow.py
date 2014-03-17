@@ -53,7 +53,7 @@ class pyplayshow :
         "Destructor to make sure pygame shuts down, etc."
 
     def play(self, soundfile, noplay = False):
-        sound = pygame.mixer.Sound('soundfile')
+        sound = pygame.mixer.Sound(soundfile)
         if not noplay: sound.play()
         return sound
 
